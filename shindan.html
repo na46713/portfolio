@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+<title>適正職業診断</title>
+<meta name="outbrain-crawl" content="no-rec">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<header id="commonHeader">
+<section id="flowsHead" class="wf-mplus1p">あなたにあった職業がわかる！</section>
+<section id="flows" class="wf-mplus1p">適正職業診断</section>
+</header>
+
+<div id="wrapper">
+    <main>
+        <article id="pageBody">
+
+            <div class="point_box">
+            <div class="box">
+            <div class="txt">
+            <p>3つの簡単な質問からあなたの天職を診断します。
+			<br>このプログラムは3つの質問の回答から個人属性の他に、
+			<br>回答者の思考時間、クリック速度、瞬きの回数、今朝食べたもの...などの特長量を抽出し、
+			<br>ビッグデータ解析による人工知能(JinkouChinou)アルゴリズムを用いてあなたの適正職業を診断します。
+			<br>なお、診断までに3～5秒ほど時間がかかる場合があります。</p>
+            </div>
+            </div>
+            </div>
+
+
+            <ul class="qalist wf-mplus1p">
+		
+		<li id="0" class="question">
+		<div class="qabox">
+                    <a href="#1" onclick="show(1)" class="qabtn"><div class="btnBox btnBox_y">START!</div></a>
+                </div>
+            </li>
+            <li id="1" class="question">
+                <a name="#1"></a>
+                <div class="qbox"><span  class="q">Q.</span>あなたの性別は？</div>
+                <div class="qabox">
+                    <a href="#2" onclick="show(2)" class="qabtn"><div class="btnBox btnBox_y">男性</div></a>
+                    <a href="#2" onclick="show(2)" class="qabtn"><div class="btnBox btnBox_n">女性</div></a>
+                </div>
+            </li>
+            <li id="2" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>どちらかというと</div>
+                <div class="qabox">
+                    <a href="#3" onclick="show(3)" class="qabtn"><div class="btnBox btnBox_y">インドア派</div></a>
+                    <a href="#3" onclick="show(3)" class="qabtn"><div class="btnBox btnBox_n">アウトドア派</div></a>
+                </div>
+            </li>
+            <li id="3" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>Beef or Chicken？</div>
+                <div class="qabox">
+                    <a href="answer1.htm" onclick="show(answer1.htm)" class="qabtn"><div class="btnBox btnBox_y">BUMPOFCHICKEN</div></a>
+                    <a href="answer2.htm" onclick="show(amswer2.htm)" class="qabtn"><div class="btnBox btnBox_n">RADWIMPS</div></a>
+                </div>
+            </li>
+            </ul>
+        </article>
+    </main>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(function(){
+   $('a[href^=#]').click(function() {
+      var speed = 600;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+$(function(){
+    h = $(window).height();
+    h = h-30;
+    $(".question").css("min-height", h + "px");
+    $(".answerList .box").css("min-height", h + "px");
+    
+});
+function show(idName){ 
+    $("#" + idName).show();
+}
+
+</script>
+
+
+</body>
+</html>
