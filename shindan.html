@@ -5,13 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 
 <title>適正職業診断</title>
-<meta name="outbrain-crawl" content="no-rec">
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<link rel="stylesheet" href="css/reset.css" type="text/css">
-<link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="test.js"></script>
 
 </head>
 <body>
@@ -73,34 +69,6 @@
         </article>
     </main>
 </div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-$(function(){
-   $('a[href^=#]').click(function() {
-      var speed = 600;
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top;
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-$(function(){
-    h = $(window).height();
-    h = h-30;
-    $(".question").css("min-height", h + "px");
-    $(".answerList .box").css("min-height", h + "px");
-    
-});
-function show(idName){ 
-    $("#" + idName).show();
-}
-
-</script>
-
 
 </body>
 </html>
