@@ -1,0 +1,35 @@
+button.kaishi{
+    width:  300px;
+    color: #333;
+    border-radius: 50vh;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #f8f8ff;
+    margin: 20px 100px 10px;
+    padding: 1em 2em;
+}
+
+  
+button.kaishi:hover{
+    text-decoration: none;
+    background-color: #e0e8ff;
+}
+
+table.main{
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px;
+}
+
+tr,td{
+    padding: 50px;
+    width: 30px;
+    height: 30px;
+    border: 5px solid #000;
+    text-size: 100px;
+    color: #000;
+}
+
+table.main td:hover{
+    background-color: #e0e8ff;
+}
