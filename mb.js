@@ -215,17 +215,17 @@
   MAIN.prototype.game_over = function(winner){
     if(winner === "player"){
       setTimeout((function(){
-        alert("you win");
+        alert("かち");
       }).bind(this),100);
     }
     else if(winner === "computer"){
       setTimeout((function(){
-        alert("you lose...");
+        alert("まけ");
       }).bind(this),100);
     }
     else{
       setTimeout((function(){
-        alert("引き分けです。");
+        alert("引き分け");
       }).bind(this),100);
     }
   };
