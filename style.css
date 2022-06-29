@@ -66,4 +66,69 @@ body {
     left: 30%;
 }
 
+@media screen and (max-width: 479px) {
+    header {
+    width: 100%;
+    padding: 30px 4% 10px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    }
 
+    h1 {
+    margin: 0; padding: 0;
+    font-size: 35px;
+    }
+    
+    a {
+    text-decoration: none;
+    color: #4b4b4b;
+    }
+
+    nav {
+    margin: 0 0 0 auto;
+    }
+
+    ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    }
+
+    li {
+    margin: 0 0 0 20px;
+    font-size: 25px;
+    }
+
+    li a:hover{
+    background-color: #f0f8ff
+    }
+
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+    color: #535353;
+    }
+
+    .main-container {
+    position: relative;
+    top: 100px;
+    left: 25%;
+    }
+
+    .title {
+    font-size: 20px;
+    left: 20%;
+    }
+
+    .pic {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    } 
+   
+}
