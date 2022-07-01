@@ -2,10 +2,6 @@
    box-sizing: border-box;
 }
 
-body {
- overflow-x: hidden;
-}
-
 header {
     width: 100%;
     padding: 30px 4% 10px;
@@ -45,6 +41,7 @@ li a:hover{
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
